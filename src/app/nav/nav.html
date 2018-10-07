@@ -1,0 +1,39 @@
+<!--Main Nav-->
+<div id="nav" class="">
+
+   <div class="nav-container-margin flex-container">
+  
+    <div>LOGO</div>
+    
+    <div class="top-nav-item-margin">
+      
+      <form class="flex-container" method="POST" action="">
+        <input id="search" class="no-border no-background" type="text">
+        <button class="no-border no-background"><i class="fas fa-search"></i></button>
+      </form>
+
+    </div>
+
+    <div class="top-nav-item-margin">Item</div>
+   
+  </div>
+
+</div>
+
+<!--Bottom Nav-->
+<div id="nav" class="">
+  
+    <div class="nav-container-margin">
+      <span style="font-size: 12px;">The Empire</span>
+      <!--Assigns nav list to nav var-->
+      <span *ngFor="let nav of nav_list" class="bottom-nav-item-margin">{{nav.name}}</span>
+      
+    </div>  
+
+</div>
+
+<!--Drop Down-->
+<!--Display dropdown according to certain nav-->
+<div *ngIf="selectedNavItem" id="drop-down">
+        This is a dropdown
+</div>
