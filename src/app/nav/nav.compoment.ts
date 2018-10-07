@@ -17,15 +17,16 @@ export class NavComponent implements OnInit{
    nav;
 
    //Assign object tempalte to variable
-   /*selectedHero: Hero;
+   selectedCategory: NavItem;
   
-   //create method and assign the hero var to Hero template
-   onSelect(hero: Hero): void {
+   //assign the nav var to nav template
+   onHover(nav: NavItem): void {
 
     //grab the hero var from html and assign it to selected hero
-    this.selectedHero = hero;
+    this.selectedCategory = nav;
+    console.log('It Works!')
   
-   }*/
+   }
 
 
    //Assign list to var

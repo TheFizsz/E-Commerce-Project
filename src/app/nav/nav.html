@@ -24,16 +24,53 @@
 <div id="nav" class="">
   
     <div class="nav-container-margin">
-      <span style="font-size: 12px;">The Empire</span>
+     
       <!--Assigns nav list to nav var-->
-      <span *ngFor="let nav of nav_list" class="bottom-nav-item-margin">{{nav.name}}</span>
+      <span 
+        *ngFor="let nav of nav_list" 
+        (click)="onHover(nav)" 
+        class="bottom-nav-item-margin">{{nav.name}}</span>
       
     </div>  
 
 </div>
 
 <!--Drop Down-->
-<!--Display dropdown according to certain nav-->
-<div *ngIf="selectedNavItem" id="drop-down">
-        This is a dropdown
+<!--Display dropdown according to certain nav if selectedCategory is assigned-->
+<div *ngIf="selectedCategory" id="drop-down">
+        <i class="fas fa-times" (click)="onHover(none)" ></i>   
+        <div class="flex-container">
+          <div class="dropdown-item-container "> 
+           
+            Infantry   
+
+          </div>
+          <div class="dropdown-item-container"> 
+
+              Missile
+
+          </div>
+          <div class="dropdown-item-container"> 
+
+                  Cavalry
+
+          </div>
+          <div class="dropdown-item-container"> 
+
+                          Hero
+          
+          </div>
+          <div class="dropdown-item-container"> 
+
+                 Monster
+                  
+           </div>
+           <div class="dropdown-item-container"> 
+
+                   Magic
+           
+          </div>
+
+        </div>  
+        <div class="center-text">SEE ALL</div>      
 </div>

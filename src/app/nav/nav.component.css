@@ -1,5 +1,23 @@
 .nav-container-margin{padding: 20px 110px;}
 #nav{background-color: #ccc;}
-.bottom-nav-item-margin{margin-left: 31px; font-size: 12px;}
+.bottom-nav-item-margin{margin-left: 27px; font-size: 12px;}
 .top-nav-item-margin{margin-left: 37.5%; }
 #search{ border-bottom: 1px solid black; width: 300px;}
+
+
+#drop-down{
+    width: 75%;
+    height: 410px;
+    background-color: #ccc;
+    border: 1px black solid;
+    margin-left: 12%;
+}
+
+.dropdown-item-container{
+
+    width: 190px;
+    height: 240px;
+    background-color: darkgray;
+    margin: 50px 35px;
+
+}

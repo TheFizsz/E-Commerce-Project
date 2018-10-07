@@ -3,7 +3,7 @@ import { NavItem } from './nav_object';
 
 //Create a HEROES list from the Hero class and export it
 export const NavList: NavItem[] = [
-  
+  { id: 1, name: 'The Empire' },
   { id: 2, name: 'Dwarves' },
   { id: 3, name: 'Kislev' },
   { id: 4, name: 'Bretonnia' },
