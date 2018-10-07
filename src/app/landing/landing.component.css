@@ -1,0 +1,4 @@
+#featured-section{width: 88.2%; height: 600px; background-color: #ccc;}
+#featured-display{flex-grow: 2; height: 600px; background-color: darkgray;}
+#featured-browse{flex-grow: 1; height: 600px; background-color: black;}
+.featured-browse-option{width: 100%; height: 200px; background-color: #cfd8dc;}
