@@ -3,3 +3,22 @@ body{margin: 0; padding: 0;}.flex-container{display: flex;}
 .no-border{border: none;}
 .no-background{background: none;}
 .center-text{text-align: center;}
+.solid-black-border{border: 1px solid black;}
+.cursor-pointer{cursor: pointer;}
+.screen-width{width: 100%;}
+.absolute-position{position: absolute;}
+.fixed-position{position: fixed;}
+.z-index-zero{z-index: 0;}
+.z-index-one{z-index: 1;}
+.screen-height{height: 100%;}
+.hide-overflow{overflow: hidden;}
+.display-crop-image{ margin-left: -50%;
+    margin-right: -100%;
+    margin-top: -70%;
+    margin-bottom: -100%;
+
+width: 500px; height: 500px;
+}
+
+.shade{background-color: rgba(0, 0, 0, 0.5)}
+.font-white{color: white;}

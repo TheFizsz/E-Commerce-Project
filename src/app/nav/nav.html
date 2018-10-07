@@ -8,13 +8,16 @@
     <div class="top-nav-item-margin">
       
       <form class="flex-container" method="POST" action="">
-        <input id="search" class="no-border no-background" type="text">
+        <input id="search" class="no-border no-background" type="text" placeholder="Search for products">
         <button class="no-border no-background"><i class="fas fa-search"></i></button>
       </form>
 
     </div>
 
-    <div class="top-nav-item-margin">Item</div>
+    <div class="top-nav-item-margin flex-container">
+      <div><i class="fas fa-user nav-icon-margin solid-black-border"></i></div>
+      <div><i class="fas fa-cart-plus nav-icon-margin solid-black-border"></i></div>
+    </div>
    
   </div>
 
@@ -23,13 +26,13 @@
 <!--Bottom Nav-->
 <div id="nav" class="">
   
-    <div class="nav-container-margin">
+    <div class="nav-container-margin cursor-pointer">
      
       <!--Assigns nav list to nav var-->
       <span 
         *ngFor="let nav of nav_list" 
         (click)="onHover(nav)" 
-        class="bottom-nav-item-margin">{{nav.name}}</span>
+        class="bottom-nav-item-margin solid-nav-side-border">{{nav.name}}</span>
       
     </div>  
 
@@ -37,40 +40,65 @@
 
 <!--Drop Down-->
 <!--Display dropdown according to certain nav if selectedCategory is assigned-->
-<div *ngIf="selectedCategory" id="drop-down">
-        <i class="fas fa-times" (click)="onHover(none)" ></i>   
+<div *ngIf="selectedCategory">
+<div id="drop-down" class="z-index-one">
+        <i class="fas fa-times" (click)="onHover(none)" ></i> 
+        <div class="center-text">{{selectedCategory.name}}</div>  
         <div class="flex-container">
-          <div class="dropdown-item-container "> 
+          <div class="dropdown-item-container solid-black-border cursor-pointer"> 
            
-            Infantry   
+            <div><div class="dropdown-sub-label center-text absolute-position shade font-white dropdown-sub-cat-width">Infantry</div></div>   
+            <div class="dropdown-img-container hide-overflow"><img class="display-crop-image" src="{{selectedCategory.infantry_image}}"></div>
 
           </div>
-          <div class="dropdown-item-container"> 
-
-              Missile
-
-          </div>
-          <div class="dropdown-item-container"> 
-
-                  Cavalry
-
-          </div>
-          <div class="dropdown-item-container"> 
-
-                          Hero
+          <div class="dropdown-item-container solid-black-border cursor-pointer"> 
+           
+              <div><div class="dropdown-sub-label center-text absolute-position shade font-white dropdown-sub-cat-width">Missile</div></div>   
+              <div class="dropdown-img-container hide-overflow"><img class="display-crop-image" src="{{selectedCategory.missile_image}}"></div>
+  
+            </div>
+         
+            <div class="dropdown-item-container solid-black-border cursor-pointer"> 
+           
+                <div><div class="dropdown-sub-label center-text absolute-position shade font-white dropdown-sub-cat-width">Cavalry</div></div>   
+                <div class="dropdown-img-container hide-overflow"><img class="display-crop-image" src="{{selectedCategory.cavalry_image}}"></div>
+    
+              </div>
+         
+              <div class="dropdown-item-container solid-black-border cursor-pointer"> 
+           
+                  <div><div class="dropdown-sub-label center-text absolute-position shade font-white dropdown-sub-cat-width">Hero</div></div>   
+                  <div class="dropdown-img-container hide-overflow"><img class="display-crop-image" src="{{selectedCategory.hero_image}}"></div>
+      
+                </div>
+         
+                <div class="dropdown-item-container solid-black-border cursor-pointer"> 
+           
+                    <div><div class="dropdown-sub-label center-text absolute-position shade font-white dropdown-sub-cat-width">Monster</div></div>   
+                    <div class="dropdown-img-container hide-overflow"><img class="display-crop-image" src="{{selectedCategory.monster_image}}"></div>
+        
+                  </div>
+                  <div class="dropdown-item-container solid-black-border cursor-pointer"> 
+           
+                      <div><div class="dropdown-sub-label center-text absolute-position shade font-white dropdown-sub-cat-width">Magic</div></div>   
+                      <div class="dropdown-img-container hide-overflow"><img class="display-crop-image" src="{{selectedCategory.magic_image}}"></div>
           
-          </div>
-          <div class="dropdown-item-container"> 
-
-                 Monster
-                  
-           </div>
-           <div class="dropdown-item-container"> 
-
-                   Magic
-           
-          </div>
+                    </div>
+                   
 
         </div>  
-        <div class="center-text">SEE ALL</div>      
+        <div class="center-text cursor-pointer">SEE ALL</div>      
+</div>
+
+  <div id="screen-black-shade" class="screen-width z-index-zero"></div>
+
+</div>
+
+<div id="ad-banner-bar" class="screen-width">
+
+  <div class="nav-container-margin center-text">
+    <span class="nav-container-margin"><b>UP TO 50% OFF ON NEW LEGENDARY HEROES</b></span>
+    <span class="nav-container-margin cursor-pointer"><b>SHOP NOW</b> <i style="margin-left: 20px;" class="fas fa-arrow-right"></i></span>
+  </div>
+
 </div>

@@ -1,23 +1,45 @@
-.nav-container-margin{padding: 20px 110px;}
+.nav-container-margin{padding: 15px 110px; }
 #nav{background-color: #ccc;}
-.bottom-nav-item-margin{margin-left: 27px; font-size: 12px;}
+.bottom-nav-item-margin{padding: 5px 20px; font-size: 12px;}
 .top-nav-item-margin{margin-left: 37.5%; }
-#search{ border-bottom: 1px solid black; width: 300px;}
+#search{ border-bottom: 1px solid black; width: 300px; height: 30px;}
 
+.solid-nav-side-border{
+    border-right: 1px solid darkgray;
+    
+}
+
+.nav-icon-margin{ padding: 5px 10px;}
 
 #drop-down{
-    width: 75%;
+    width: 84.6%;
     height: 410px;
-    background-color: #ccc;
+    background-color: white;
     border: 1px black solid;
-    margin-left: 12%;
+    margin-left: 8%;
+    position: absolute;
+  
 }
 
 .dropdown-item-container{
 
-    width: 190px;
+    width: 210px;
     height: 240px;
     background-color: darkgray;
-    margin: 50px 35px;
+    margin: 50px 30px;
 
 }
+
+#ad-banner-bar{background-color: black; color: white;}
+
+#screen-black-shade{
+    height: 1500px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 1920px;
+    position: fixed;
+   
+}
+.dropdown-sub-label{padding-top: 10px;}
+.dropdown-sub-cat-width{width: 210px; height: 20px;}
+
+.dropdown-img-container{width: 100%; height: 100%;}
