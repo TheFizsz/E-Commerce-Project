@@ -2,3 +2,7 @@
 #featured-display{flex-grow: 2; height: 600px; background-color: darkgray;}
 #featured-browse{flex-grow: 1; height: 600px; background-color: black;}
 .featured-browse-option{width: 100%; height: 200px; background-color: #cfd8dc;}
+#hottest-section-options{width: 88.2%; height: 150px; background-color:#b0bec5; }
+#hottest-section{width: 88.2%; height: 600px; background-color:#90a4ae; }
+.hottest-icon-container-margin{margin: 30px 45px;}
+.hottest-miniature-panel{width: 320px; height: 480px; background-color: #ccc; margin: 40px 30px;}

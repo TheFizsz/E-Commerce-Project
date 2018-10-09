@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.compoment';
 import {LandingComponent} from './landing/landing.component';
+import {FooterComponent} from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    LandingComponent
+    LandingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

@@ -12,12 +12,12 @@ body{margin: 0; padding: 0;}.flex-container{display: flex;}
 .z-index-one{z-index: 1;}
 .screen-height{height: 100%;}
 .hide-overflow{overflow: hidden;}
-.display-crop-image{ margin-left: -50%;
+.display-crop-image{ margin-left: -20%;
     margin-right: -100%;
-    margin-top: -70%;
+    margin-top: -40%;
     margin-bottom: -100%;
 
-width: 500px; height: 500px;
+width: 400px; height: 400px;
 }
 
 .shade{background-color: rgba(0, 0, 0, 0.5)}
